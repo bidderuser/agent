@@ -1,2 +1,2 @@
-# agent
+# Agent
 Simple bidding  agent 
