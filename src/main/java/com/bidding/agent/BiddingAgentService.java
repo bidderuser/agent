@@ -10,6 +10,15 @@ import io.netty.util.internal.ThreadLocalRandom;
  * Bidder agent service implementation.
  */
 public final class BiddingAgentService extends DssServiceGrpcImplBase {
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public DssResponse onBid(final DssRequest request) {
+		System.out.println("DssRequest: " + request);
+		return super.onBid(request);
+	}
 
 	/**
 	 * Process incoming bid.
