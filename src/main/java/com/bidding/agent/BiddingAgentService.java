@@ -4,7 +4,6 @@ import com.epom.dss.agent.CreativeMatch;
 import com.epom.dss.agent.CreativeMatches;
 import com.epom.dss.agent.DssRequest;
 import com.epom.dss.agent.DssResponse;
-import com.epom.dss.agent.DssRequest;
 import com.epom.dss.agent.server.service.DssServiceGrpcImplBase;
 import io.netty.util.internal.ThreadLocalRandom;
 
@@ -13,15 +12,6 @@ import io.netty.util.internal.ThreadLocalRandom;
  */
 public final class BiddingAgentService extends DssServiceGrpcImplBase {
 	
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public DssResponse onBid(final DssRequest request) {
-		System.out.println("DssRequest: " + request);
-		return super.onBid(request);
-	}
-
 	/**
 	 * {@inheritDoc}
 	 */
